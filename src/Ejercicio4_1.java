@@ -30,17 +30,15 @@ public class Ejercicio4_1 {
     }
 
     public static int[] arrayPares(int[] tabla) {
-        Arrays.stream(tabla)
+        return Arrays.stream(tabla)
                 .filter(num->num%2==0)
                 .toArray();
-        return tabla;
     }
 
     public static int[] arrayImpares(int[] tabla) {
-        Arrays.stream(tabla)
+        return Arrays.stream(tabla)
                 .filter(num->num%2!=0)
                 .toArray();
-        return tabla;
         
     }
 }
